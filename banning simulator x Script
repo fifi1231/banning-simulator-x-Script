@@ -1,0 +1,666 @@
+
+
+--// Anti Afk
+local VirtualUser=game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+VirtualUser:CaptureController()
+VirtualUser:ClickButton2(Vector2.new())
+end)
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "banning simulator x"})
+
+getgenv().farm = false
+getgenv().tp = false
+_G.selectMob = "nil"
+_G.selectTOMob = "nil"
+getgenv().ReddemChest = false
+getgenv().hideplayer = false
+getgenv().Auroopen = false
+_G.selectEgg = "nil"
+getgenv().Autorank = false
+getgenv().Autotalmsan = false
+getgenv().Autoarea = false
+getgenv().Eventopen = false
+
+
+
+
+spawn(function() 
+	while task.wait() do
+		if getgenv().farm then
+			Farmmobs()
+		end
+	end
+end)
+
+spawn(function() 
+	while task.wait() do
+		if getgenv().tp then
+			teleport()
+		end
+	end
+end)
+
+spawn(function() 
+	while task.wait() do
+		if getgenv().ReddemChest then
+			reddemchest()
+		end
+	end
+end)
+
+spawn(function() 
+	while task.wait() do
+		if getgenv().hideplayer then
+			hiderplayer()
+		end
+	end
+end)
+
+spawn(function() 
+	while task.wait() do
+		if getgenv().Auroopen then
+			AutoEgg()
+		end
+	end
+end)
+
+spawn(function() 
+	while task.wait() do
+		if getgenv().Autorank then
+			Aurorank()
+		end
+	end
+end)
+
+spawn(function() 
+	while task.wait() do
+		if getgenv().Autotalmsan then
+			Aurotalmsan()
+		end
+	end
+end)
+
+spawn(function() 
+	while task.wait() do
+		if getgenv().Autoarea then
+			Auroarea()
+		end
+	end
+end)
+
+spawn(function() 
+	while task.wait() do
+		if getgenv().Eventopen then
+			Eventegg()
+		end
+	end
+end)
+
+function Eventegg()
+	local qEventegg = {}
+	local args = {
+		[1] = "dick",
+		[2] = {
+			[1] = 1,
+			[2] = "500k Event",
+			[3] = false
+		}
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("eggs/hatchEgg"):FireServer(unpack(args))	
+	return qEventegg
+end
+
+function hiderplayer()
+	local qhiderplayer = {}
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22716.369140625, 44.495765686035156, 1958.1519775390625)
+	return qhiderplayer
+end
+
+function Auroarea()
+	local qAuroarea = {}
+	local args = {
+		[1] = "ok",
+		[2] = {
+			[1] = "Ban Land",
+			[2] = "Desert"
+		}
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("purchaseZone"):FireServer(unpack(args))
+	
+	local args = {
+		[1] = "ok",
+		[2] = {
+			[1] = "Ban Land",
+			[2] = "Sunflower Field"
+		}
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("purchaseZone"):FireServer(unpack(args))
+	
+	local args = {
+		[1] = "ok",
+		[2] = {
+			[1] = "Ban Land",
+			[2] = "Honeycomb"
+		}
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("purchaseZone"):FireServer(unpack(args))
+	
+	local args = {
+		[1] = "ok",
+		[2] = {
+			[1] = "Ban Land",
+			[2] = "Ice Land"
+		}
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("purchaseZone"):FireServer(unpack(args))
+	
+	local args = {
+		[1] = "ok",
+		[2] = {
+			[1] = "Ban Land",
+			[2] = "Beach"
+		}
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("purchaseZone"):FireServer(unpack(args))
+	
+	local args = {
+		[1] = "ok",
+		[2] = {
+			[1] = "Ban Land",
+			[2] = "Candy Land"
+		}
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("purchaseZone"):FireServer(unpack(args))
+	
+	local args = {
+		[1] = "ok",
+		[2] = {
+			[1] = "Ban Land",
+			[2] = "The Mines"
+		}
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("purchaseZone"):FireServer(unpack(args))
+	
+	local args = {
+		[1] = "ok",
+		[2] = {
+			[1] = "Ban Land",
+			[2] = "Lava Lands"
+		}
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("purchaseZone"):FireServer(unpack(args))
+
+	local args = {
+		[1] = "ok",
+		[2] = {
+			[1] = "Ban Land",
+			[2] = "Enchanted Forest"
+		}
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("purchaseZone"):FireServer(unpack(args))
+	
+	local args = {
+		[1] = "ok",
+		[2] = {
+			[1] = "Ban Land",
+			[2] = "Toxic Lands"
+		}
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("purchaseZone"):FireServer(unpack(args))
+	
+	local args = {
+		[1] = "ok",
+		[2] = {
+			[1] = "Ban Land",
+			[2] = "Jester Castle"
+		}
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("purchaseZone"):FireServer(unpack(args))
+	
+	return qAuroarea
+end
+
+function Aurotalmsan()
+	local qAurotalmsan = {}
+	local args = {
+		[1] = 1
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("talismans/purchaseTalisman"):FireServer(unpack(args))
+	
+	local args = {
+		[1] = 2
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("talismans/purchaseTalisman"):FireServer(unpack(args))
+	
+	local args = {
+		[1] = 3
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("talismans/purchaseTalisman"):FireServer(unpack(args))
+	
+	local args = {
+		[1] = 4
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("talismans/purchaseTalisman"):FireServer(unpack(args))
+	
+	local args = {
+		[1] = 5
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("talismans/purchaseTalisman"):FireServer(unpack(args))
+	
+	local args = {
+		[1] = 6
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("talismans/purchaseTalisman"):FireServer(unpack(args))
+	
+	local args = {
+		[1] = 7
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("talismans/purchaseTalisman"):FireServer(unpack(args))
+	
+	local args = {
+		[1] = 8
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("talismans/purchaseTalisman"):FireServer(unpack(args))		
+	return qAurotalmsan
+end
+
+function AutoEgg()
+	local qAutoEgg = {}
+	local args={
+		[1] = "Egg",
+		[2]={
+		   [1]=1,
+		   [2]=(_G.selectEgg),
+		   [3]=true
+		}
+	}
+	
+	game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged:FindFirstChild("eggs/hatchEgg"):FireServer(unpack(args))
+	return qAutoEgg
+end
+
+function Aurorank()
+	local qAurorank = {}
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("unlockRank"):FireServer()
+	return qAurorank
+end
+
+
+function reddemchest()
+	local qreddemchest = {}
+	local args = {
+		[1] = "nwm",
+		[2] = {}
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("rewards/claimGroupReward"):FireServer(unpack(args))	
+	return qreddemchest
+end
+
+local player = game.Players.LocalPlayer.Character
+
+function teleport()
+	local qteleport = {}
+    local farmobject = game:GetService("Workspace").npcs[(_G.selectTOMob)]
+	player.HumanoidRootPart.CFrame = farmobject.HumanoidRootPart.CFrame
+	return qteleport
+end
+
+
+function Farmmobs()
+	local qfarmmobs = {}
+	game:GetService("ReplicatedStorage").rbxts_include.node_modules["@rbxts"].net.out._NetManaged.damageNPC:FireServer(workspace.npcs[(_G.selectMob)])
+	return qfarmmobs
+end
+
+local TRTab = Window:MakeTab({
+	Name = "Trial Farm",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+getgenv().Trialtp = false
+_G.selecttrialMob = "nil"
+
+spawn(function() 
+	while task.wait() do
+		if getgenv().Trialtp then
+			Tteleport()
+		end
+	end
+end)
+
+local playere = game.Players.LocalPlayer.Character
+
+function Tteleport()
+	local qTteleport = {}
+    local trialnpcs = game:GetService("Workspace").trials.map.npcs[(_G.selecttrialMob)]
+	playere.HumanoidRootPart.CFrame = trialnpcs.HumanoidRootPart.CFrame
+	return qTteleport
+end 
+
+TRTab:AddLabel("If you not teleport to trial mod someone doing trial and")
+TRTab:AddLabel("you must find new server where none doing trial")
+TRTab:AddLabel("To auto attach trial mod press f5")
+TRTab:AddLabel(" to turn off auto attach press f6")
+
+TRTab:AddToggle({
+	Name = "Teleport Mob to you Trial",
+	Default = false,
+	Callback = function(Value)
+		getgenv().Trialtp = (Value)
+	end    
+})
+
+TRTab:AddDropdown({
+	Name = "Select Mob",
+	Default = "Forest Wizard",
+	Options = {"Forest Wizard", "Mushroom King", "Desert Bandit", "Desert Scout", "Floral Girl", "Magic Floral Man", "Onett", "Bee King", "Ice Golem", "Ice Skier", "Beach Boy", "Pufferfish King", "Sparkletime King", "Pastel Guardian", "Mining Guy", "Elemental King", "Lava Lord", "Headless Doombringer", "Enchanted Golem", "Ud'zal", "Toxic Sparkletime King", "Toxic Wastelander", "Neon Jester", "Prince"},
+	Callback = function(Value)
+		_G.selecttrialMob = Value
+	end    
+})
+   
+local on
+local keybind=Enum.KeyCode.F5
+local keybindEnd=Enum.KeyCode.F6
+local UserInputService=game:GetService("UserInputService")
+local RunService=game:GetService("RunService")
+local plr=game:GetService("Players").LocalPlayer
+local mouse=plr:GetMouse()
+ 
+local sg=Instance.new("ScreenGui",plr.PlayerGui)
+local f=Instance.new("TextLabel",sg)
+f.Size=UDim2.new(0,25,0,10)
+f.BackgroundColor3=Color3.fromRGB(180,50,50)
+f.Visible=false
+f.Text="On"
+f.TextSize=11
+ 
+local vu = game:GetService("VirtualUser")
+local function CC()
+vu:CaptureController();
+end 
+local function CB()
+local v2 = Vector2.new();
+vu:ClickButton1(v2);
+end
+ 
+function Start(a,b)
+   if a.KeyCode==keybind then
+       on=true
+       a=RunService.Stepped:Connect(function()
+           if on then
+               CC();
+               CB();
+               f.Visible=true
+               f.Position=UDim2.new(0,mouse.X-12.5,0,mouse.Y-15)
+           else
+               a:Disconnect()
+           end
+       end)
+       f.Visible=false
+   end
+end
+ 
+function Stop(a,b)
+   if a.KeyCode==keybindEnd then
+       on=false
+       f.Visible=false
+   end
+end
+ 
+UserInputService.InputBegan:connect(Start)
+UserInputService.InputEnded:connect(Stop)
+
+local FTab = Window:MakeTab({
+	Name = "Farm",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+FTab:AddToggle({
+	Name = "Auto Farm",
+	Default = false,
+	Callback = function(Value)
+		getgenv().farm = (Value)
+	end    
+})
+
+FTab:AddToggle({
+	Name = "Teleport Mob to you",
+	Default = false,
+	Callback = function(Value)
+		getgenv().tp = (Value)
+	end    
+})
+
+FTab:AddDropdown({
+	Name = "Select Mob",
+	Default = "Forest Wizard",
+	Options = {"Forest Wizard", "Mushroom King", "Desert Bandit", "Desert Scout", "Floral Girl", "Magic Floral Man", "Onett", "Bee King", "Ice Golem", "Ice Skier", "Beach Boy", "Pufferfish King", "Sparkletime King", "Pastel Guardian", "Mining Guy", "Elemental King", "Lava Lord", "Headless Doombringer", "Enchanted Golem", "Ud'zal", "Toxic Sparkletime King", "Toxic Wastelander", "Neon Jester", "Prince"},
+	Callback = function(Value)
+		_G.selectMob = Value
+		_G.selectTOMob = Value
+		_G.selecttrialMob = Value
+	end    
+})
+
+FTab:AddToggle({
+	Name = "Reddem Chest",
+	Default = false,
+	Callback = function(Value)
+	getgenv().ReddemChest = Value
+	end    
+})
+
+local ETab = Window:MakeTab({
+	Name = "Eggs",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+ETab:AddToggle({
+	Name = "Open Event Egg",
+	Default = false,
+	Callback = function(Value)
+	getgenv().Eventopen = Value
+	end    
+})
+
+ETab:AddToggle({
+	Name = "Open Egg",
+	Default = false,
+	Callback = function(Value)
+	getgenv().Auroopen = Value
+	end    
+})
+
+ETab:AddDropdown({
+	Name = "Select Egg",
+	Default = "None",
+	Options = {"Starter", "Desert", "Honeycomb", "Candy", "Molten", "Jester"},
+	Callback = function(Value)
+		_G.selectEgg = Value
+	end    
+})
+
+local TTab = Window:MakeTab({
+	Name = "Temp Tab",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+TTab:AddToggle({
+	Name = "Auto Buy Rank",
+	Default = false,
+	Callback = function(Value)
+		getgenv().Autorank = Value
+	end    
+})
+
+TTab:AddToggle({
+	Name = "Auto Buy Talisman",
+	Default = false,
+	Callback = function(Value)
+		getgenv().Autotalmsan = Value
+	end    
+})
+
+TTab:AddToggle({
+	Name = "Auto Buy Area",
+	Default = false,
+	Callback = function(Value)
+		getgenv().Autoarea = Value
+	end    
+})
+
+
+local HTab = Window:MakeTab({
+	Name = "Hide",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+HTab:AddLabel("To work hide option you must turn on noclip")
+
+HTab:AddToggle({
+	Name = "Hide",
+	Default = false,
+	Callback = function(Value)
+		getgenv().hideplayer = Value
+	end    
+})
+
+HTab:AddButton({
+	Name = "Noclip",
+	Callback = function()
+		function noclip()
+			Clip = false
+			local function Nocl()
+				if Clip == false and game.Players.LocalPlayer.Character ~= nil then
+					for _,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+						if v:IsA('BasePart') and v.CanCollide and v.Name ~= floatName then
+							v.CanCollide = false
+						end
+					end
+				end
+				wait(0.21) -- basic optimization
+			end
+			Noclip = game:GetService('RunService').Stepped:Connect(Nocl)
+		end
+		
+		function clip()
+			if Noclip then Noclip:Disconnect() end
+			Clip = true
+		end
+		
+		noclip() -- to toggle noclip() and clip()
+  	end    
+})
+
+local QTab = Window:MakeTab({
+	Name = "Teleport",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+QTab:AddButton({
+	Name = "Spawn",
+	Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22827.2695, 47.0389709, -58.74226, 0.736966312, -1.12911691e-09, 0.675929487, -3.70346576e-09, 1, 5.70835645e-09, -0.675929487, -6.71014799e-09, 0.736966312)
+  	end    
+})
+QTab:AddButton({
+	Name = "Desert",
+	Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22839.1621, 46.3389969, 302.764038, -0.995165408, 7.74824915e-09, -0.0982130095, 6.98739733e-09, 1, 8.09091905e-09, 0.0982130095, 7.36554906e-09, -0.995165408)
+  	end    
+})
+QTab:AddButton({
+	Name = "Sunflower",
+	Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22841.8418, 46.131279, 537.560974, -0.982857764, -8.45642774e-08, -0.184365362, -7.92780241e-08, 1, -3.60439394e-08, 0.184365362, -2.08099458e-08, -0.982857764)
+  	end    
+})
+QTab:AddButton({
+	Name = "Honeycomb",
+	Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22840.9141, 46.131279, 776.862305, -0.999839783, -1.330136e-08, 0.0178999081, -1.11730127e-08, 1, 1.19002706e-07, -0.0178999081, 1.18783639e-07, -0.999839783)
+  	end    
+})
+QTab:AddButton({
+	Name = "Ice Land",
+	Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22839.3496, 46.0677109, 1026.85181, -0.99999994, -4.06388789e-09, 0.000284880691, -4.05244505e-09, 1, 4.01669951e-08, -0.000284880691, 4.01658369e-08, -0.99999994)
+  	end    
+})
+QTab:AddButton({
+	Name = "Beach",
+	Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22839.3496, 45.7468948, 1253.49768, -0.99999994, 4.61797089e-09, 0.000287359318, 4.60484717e-09, 1, -4.56712819e-08, -0.000287359318, -4.56699567e-08, -0.99999994)
+  	end    
+})
+QTab:AddButton({
+	Name = "Candy Land",
+	Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22839.3496, 45.1857529, 1489.72595, -0.99999994, -9.29367783e-09, 0.000287359318, -9.26725274e-09, 1, 9.19585617e-08, -0.000287359318, 9.195589e-08, -0.99999994)
+  	end    
+})
+QTab:AddButton({
+	Name = "The Mines",
+	Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22839.3496, 44.8408127, 1743.94678, -0.99999994, -8.98913832e-09, 0.000287359318, -8.96356855e-09, 1, 8.89819773e-08, -0.000287359318, 8.89793981e-08, -0.99999994)
+  	end    
+})
+QTab:AddButton({
+	Name = "Lava Lands",
+	Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22839.3496, 44.4957657, 1952.72766, -0.99999994, -3.94951938e-09, 0.000287359318, -3.93828081e-09, 1, 3.91096862e-08, -0.000287359318, 3.91085528e-08, -0.99999994)
+  	end    
+})
+QTab:AddButton({
+	Name = "Enchanted Forest",
+	Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22835.8457, 44.4399033, 2204.19482, -0.995644152, 8.46594617e-08, 0.0932349786, 8.2763691e-08, 1, -2.41999274e-08, -0.0932349786, -1.63780456e-08, -0.995644152)
+  	end    
+})
+QTab:AddButton({
+	Name = "Toxic Lands",
+	Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22834.5391, 44.3616829, 2423.34277, -0.999955297, 1.87681981e-09, -0.00945413113, 2.05321271e-09, 1, -1.86480644e-08, 0.00945413113, -1.86666433e-08, -0.999955297)
+  	end    
+})
+QTab:AddButton({
+	Name = "Jester Castle",
+	Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22833.1738, 44.4579201, 2624.94336, -0.99998033, -1.14536514e-08, 0.00627613626, -1.09919203e-08, 1, 7.36038714e-08, -0.00627613626, 7.35334353e-08, -0.99998033)
+  	end    
+})
+
+local MTab = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})	
