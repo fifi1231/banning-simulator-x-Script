@@ -664,3 +664,10 @@ local MTab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })	
+
+
+OrionLib:MakeNotification({
+	Name = "Hey!",
+	Content = "If something wont work reset game",
+	Time = 5
+})
